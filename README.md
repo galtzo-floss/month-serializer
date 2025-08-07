@@ -32,7 +32,7 @@ Compatible with Ruby v1.9.3+ and JRuby v9.1+, and tested on all minor versions o
 
 - 🗓️ [Month][month-gem] objects are lighter weight.
 - There are many situations where having Months incrementable by 1 is useful
-    - e.g. Directly mappable to iteration index
+    - e.g., directly mappable to iteration index
 - It facilitates month-based math.
 - Adding a day when a day is not relevant, such as for data with a 1-month resolution, can result in very overcomplicated systems that try to work around or ignore the stray days.
 
@@ -317,7 +317,7 @@ P.S. If you need help️ or want to say thanks, 👇 Join the Discord.
 [🚂maint-contact-img]: https://img.shields.io/badge/Contact-Maintainer-0093D0.svg?style=flat&logo=rubyonrails&logoColor=red
 [💖🖇linkedin]: http://www.linkedin.com/in/peterboling
 [💖🖇linkedin-img]: https://img.shields.io/badge/PeterBoling-LinkedIn-0B66C2?style=flat&logo=newjapanprowrestling
-[💖✌️wellfound]: https://angel.co/u/peter-boling
+[💖✌️wellfound]: https://wellfound.com/u/peter-boling
 [💖✌️wellfound-img]: https://img.shields.io/badge/peter--boling-orange?style=flat&logo=wellfound
 [💖💲crunchbase]: https://www.crunchbase.com/person/peter-boling
 [💖💲crunchbase-img]: https://img.shields.io/badge/peter--boling-purple?style=flat&logo=crunchbase
