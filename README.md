@@ -11,13 +11,10 @@ Allows you to convert [`Month` objects](https://github.com/timcraft/month/blob/m
 | download rank           |  [![Downloads Today](https://img.shields.io/gem/rd/month-serializer.svg)](https://github.com/pboling/month-serializer) |
 | version                 |  [![Version](https://img.shields.io/gem/v/month-serializer.svg)](https://rubygems.org/gems/month-serializer) |
 | dependencies            |  [![Depfu](https://badges.depfu.com/badges/9b99dea566c438afe054a94d464e98ea/count.svg)](https://depfu.com/github/pboling/month-serializer?project_id=6003) |
-| continuous integration  |  [![Build Status](https://travis-ci.org/pboling/month-serializer.svg?branch=master)](https://travis-ci.org/pboling/month-serializer) |
-| test coverage           |  [![Test Coverage](https://api.codeclimate.com/v1/badges/50241bf0d9c78bcce69e/test_coverage)](https://codeclimate.com/github/pboling/month-serializer/test_coverage) |
-| maintainability         |  [![Maintainability](https://api.codeclimate.com/v1/badges/50241bf0d9c78bcce69e/maintainability)](https://codeclimate.com/github/pboling/month-serializer/maintainability) |
 | code triage             |  [![Open Source Helpers](https://www.codetriage.com/pboling/month-serializer/badges/users.svg)](https://www.codetriage.com/pboling/month-serializer) |
 | homepage                |  [on Github.com][homepage], [on Railsbling.com][blogpage] |
 | documentation           |  [on RDoc.info][documentation] |
-| Spread ~♡ⓛⓞⓥⓔ♡~      |  [🌏](https://about.me/peter.boling), [👼](https://angel.co/peter-boling), [:shipit:](http://coderwall.com/pboling), [![Tweet Peter](https://img.shields.io/twitter/follow/galtzo.svg?style=social&label=Follow)](http://twitter.com/galtzo), [🌹](https://nationalprogressiveparty.org) |
+| Spread ~♡ⓛⓞⓥⓔ♡~      |  [🌏](https://about.me/peter.boling), [👼](https://angel.co/peter-boling), [![Tweet Peter](https://img.shields.io/twitter/follow/galtzo.svg?style=social&label=Follow)](http://twitter.com/galtzo) |
 
 ### Why use Month instead of Date or Time?
 
@@ -32,7 +29,7 @@ Allows you to convert [`Month` objects](https://github.com/timcraft/month/blob/m
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'month-serializer'
+gem "month-serializer"
 ```
 
 And then execute:
@@ -53,35 +50,35 @@ Month.send(:include, Month::Serializer)
 ````
 
 This spec below, copied from the actual test suite, makes usage pretty clear.  Note how the serialized Months as integer increment by one.  If you think about counting time by months this makes sense.  We often speak this way about babies, an 18 month old, or 24 month old.
-  
+
 How old is the Common Era right now?  About 24.2k months!  Is a millenimonth, millimes, or kilomonth, a thing?  The Common Era is roughly 24 kilomonths old. 😆  And Neanderthal man went extinct about 471 kilomonths ago.
 
 ```ruby
-    {
-        -471359 => Month.new(-39280, 1),  # hist: Extinction of Neanderthal
-        24201 => Month.new(2016, 9),
-        24202 => Month.new(2016, 10),
-        # ...
-        24214 => Month.new(2017, 10),
-        24215 => Month.new(2017, 11),
-        # ...
-        24227 => Month.new(2018, 11),
-        24228 => Month.new(2018, 12)
-    }.each do |k, v|
-           context "#{k} => #{v}" do
-             it "Month converts to #{k}" do
-               expect(v.to_i).to eq(k)          # to_i is added by this gem!
-             end
-             context 'round trip' do
-               it "can load #{k} to #{v}" do
-                 expect(Month.load(k)).to eq(v) # load is added by this gem!
-               end
-               it "can dump #{v} to #{k}" do
-                 expect(Month.dump(v)).to eq(k) # dump is added by this gem!
-               end
-             end
+{
+  -471359 => Month.new(-39280, 1),  # hist: Extinction of Neanderthal
+    24201 => Month.new(2016, 9),
+    24202 => Month.new(2016, 10),
+    # ...
+    24214 => Month.new(2017, 10),
+    24215 => Month.new(2017, 11),
+    # ...
+    24227 => Month.new(2018, 11),
+    24228 => Month.new(2018, 12),
+}.each do |k, v|
+       context "#{k} => #{v}" do
+         it "Month converts to #{k}" do
+           expect(v.to_i).to(eq(k))          # to_i is added by this gem!
+         end
+         context "round trip" do
+           it "can load #{k} to #{v}" do
+             expect(Month.load(k)).to(eq(v)) # load is added by this gem!
+           end
+           it "can dump #{v} to #{k}" do
+             expect(Month.dump(v)).to(eq(k)) # dump is added by this gem!
            end
          end
+       end
+end
 ```
 
 ## Development
@@ -135,7 +132,7 @@ or in a `gemspec`
 
 ## Legal
 
-* MIT License - See [LICENSE][license] file in this project [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) 
+* MIT License - See [LICENSE][license] file in this project [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 * Copyright (c) 2018 [Peter H. Boling][peterboling] of [Rails Bling][railsbling]
 
@@ -144,12 +141,11 @@ or in a `gemspec`
 [documentation]: http://rdoc.info/github/pboling/month-serializer/frames
 [homepage]: https://github.com/pboling/month-serializer
 [blogpage]: http://www.railsbling.com/tags/month-serializer/
-[license]: LICENSE
+[license]: LICENSE.txt
 [railsbling]: http://www.railsbling.com
 [peterboling]: https://about.me/peter.boling
 [refugees]: https://www.crowdrise.com/helprefugeeswithhopefortomorrowliberia/fundraiser/peterboling
 [gplus]: https://plus.google.com/+PeterBoling/posts
 [topcoder]: https://www.topcoder.com/members/pboling/
 [angellist]: https://angel.co/peter-boling
-[coderwall]: http://coderwall.com/pboling
 [twitter]: http://twitter.com/galtzo
