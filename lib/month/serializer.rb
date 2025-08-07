@@ -1,12 +1,12 @@
-require 'month/serializer/version'
+require "month/serializer/version"
 
 # Eternal Gems
-require 'month'
+require "month"
 
 class Month
   module Serializer
     def self.included(base)
-      base.extend ClassMethods
+      base.extend(ClassMethods)
     end
 
     module ClassMethods
@@ -59,7 +59,7 @@ class Month
           number = 12
           year -= 1
         end
-        self.new(year, number)
+        new(year, number)
       end
 
       def dump(month)

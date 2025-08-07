@@ -1,0 +1,8 @@
+lib/month/serializer.rb -- 4 warnings:
+  [6]:IrresponsibleModule: Month has no descriptive comment [https://github.com/troessner/reek/blob/v6.5.0/docs/Irresponsible-Module.md]
+  [7]:IrresponsibleModule: Month::Serializer has no descriptive comment [https://github.com/troessner/reek/blob/v6.5.0/docs/Irresponsible-Module.md]
+  [12]:IrresponsibleModule: Month::Serializer::ClassMethods has no descriptive comment [https://github.com/troessner/reek/blob/v6.5.0/docs/Irresponsible-Module.md]
+  [72]:UtilityFunction: Month::Serializer::ClassMethods#active_record? doesn't depend on instance state (maybe move it to another class?) [https://github.com/troessner/reek/blob/v6.5.0/docs/Utility-Function.md]
+.yard_gfm_support.rb -- 1 warning:
+  [9, 9]:FeatureEnvy: KramdownGfmDocument#initialize refers to 'options' more than self (maybe move it to another class?) [https://github.com/troessner/reek/blob/v6.5.0/docs/Feature-Envy.md]
+5 total warnings

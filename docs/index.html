@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.9.37
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "README";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><div id='filecontents'><h1 id="monthserializer">Month::Serializer</h1>
+
+<p><strong>Integer Serialization Plugin for <a href="https://github.com/timcraft/month">Month Gem</a></strong></p>
+
+<p>Allows you to convert <a href="https://github.com/timcraft/month/blob/master/lib/month.rb"><code>Month</code> objects</a> to <code>Integer</code>, and vice versa.  This is useful for serializing Months into other data structures, like <code>String</code>, or to pass values in <code>JSON</code>, or send as parameters to Resque / Sidekiq jobs (which parameters are <a href="https://github.com/mperham/sidekiq/wiki/The-Basics#client">only compatible with simple JSON data types</a>.  Neither <code>Date</code> or <code>Month</code> can serialize properly to Resque/Sidekiq jobs.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Month::Serializer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gem name</td>
+      <td><a href="https://rubygems.org/gems/month-serializer">month-serializer</a></td>
+    </tr>
+    <tr>
+      <td>license</td>
+      <td><a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a></td>
+    </tr>
+    <tr>
+      <td>download rank</td>
+      <td><a href="https://github.com/pboling/month-serializer"><img src="https://img.shields.io/gem/rd/month-serializer.svg" alt="Downloads Today"></a></td>
+    </tr>
+    <tr>
+      <td>version</td>
+      <td><a href="https://rubygems.org/gems/month-serializer"><img src="https://img.shields.io/gem/v/month-serializer.svg" alt="Version"></a></td>
+    </tr>
+    <tr>
+      <td>dependencies</td>
+      <td><a href="https://depfu.com/github/pboling/month-serializer?project_id=6003"><img src="https://badges.depfu.com/badges/9b99dea566c438afe054a94d464e98ea/count.svg" alt="Depfu"></a></td>
+    </tr>
+    <tr>
+      <td>code triage</td>
+      <td><a href="https://www.codetriage.com/pboling/month-serializer"><img src="https://www.codetriage.com/pboling/month-serializer/badges/users.svg" alt="Open Source Helpers"></a></td>
+    </tr>
+    <tr>
+      <td>homepage</td>
+      <td>
+<a href="https://github.com/pboling/month-serializer">on Github.com</a>, <a href="http://www.railsbling.com/tags/month-serializer/">on Railsbling.com</a>
+</td>
+    </tr>
+    <tr>
+      <td>documentation</td>
+      <td><a href="http://rdoc.info/github/pboling/month-serializer/frames">on RDoc.info</a></td>
+    </tr>
+    <tr>
+      <td>Spread ~♡ⓛⓞⓥⓔ♡~</td>
+      <td>
+<a href="https://about.me/peter.boling">🌏</a>, <a href="https://angel.co/peter-boling">👼</a>, <a href="http://twitter.com/galtzo"><img src="https://img.shields.io/twitter/follow/galtzo.svg?style=social&amp;label=Follow" alt="Tweet Peter"></a>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="why-use-month-instead-of-date-or-time">Why use Month instead of Date or Time?</h3>
+
+<ul>
+  <li>Month is lighter weight.</li>
+  <li>There are many situations where having Months incrementable by 1 is useful
+    <ul>
+      <li>e.g. Directly mappable to iteration index</li>
+    </ul>
+  </li>
+  <li>It facilitates month-based math.</li>
+  <li>Adding a day when a day is not relevant, such as for data with a 1 month resolution, can result in very overcomplicated systems that try to work around or ignore the stray days.</li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>Add this line to your application’s Gemfile:</p>
+
+<pre class="code language-ruby"><code class="language-ruby">gem &quot;month-serializer&quot;
+</code></pre>
+
+<p>And then execute:</p>
+
+<pre class="code ruby"><code class="ruby">$ bundle
+</code></pre>
+
+<p>Or install it yourself as:</p>
+
+<pre class="code ruby"><code class="ruby">$ gem install month-serializer
+</code></pre>
+
+<h2 id="usage">Usage</h2>
+
+<p>Add this to the bootstrapping process of your app, somewhere after the <a href="https://github.com/timcraft/month"><code>month</code> gem</a> is loaded.<br>
+In Rails, <code>config/initializers/month-serializer.rb</code> would be perfect, but Rails is not required.</p>
+
+<pre class="code language-ruby"><code class="language-ruby">Month.send(:include, Month::Serializer)
+</code></pre>
+
+<p>This spec below, copied from the actual test suite, makes usage pretty clear.  Note how the serialized Months as integer increment by one.  If you think about counting time by months this makes sense.  We often speak this way about babies, an 18 month old, or 24 month old.</p>
+
+<p>How old is the Common Era right now?  About 24.2k months!  Is a millenimonth, millimes, or kilomonth, a thing?  The Common Era is roughly 24 kilomonths old. 😆  And Neanderthal man went extinct about 471 kilomonths ago.</p>
+
+<pre class="code language-ruby"><code class="language-ruby">{
+  -471359 =&gt; Month.new(-39280, 1),  # hist: Extinction of Neanderthal
+    24201 =&gt; Month.new(2016, 9),
+    24202 =&gt; Month.new(2016, 10),
+    # ...
+    24214 =&gt; Month.new(2017, 10),
+    24215 =&gt; Month.new(2017, 11),
+    # ...
+    24227 =&gt; Month.new(2018, 11),
+    24228 =&gt; Month.new(2018, 12),
+}.each do |k, v|
+       context &quot;#{k} =&gt; #{v}&quot; do
+         it &quot;Month converts to #{k}&quot; do
+           expect(v.to_i).to(eq(k))          # to_i is added by this gem!
+         end
+         context &quot;round trip&quot; do
+           it &quot;can load #{k} to #{v}&quot; do
+             expect(Month.load(k)).to(eq(v)) # load is added by this gem!
+           end
+           it &quot;can dump #{v} to #{k}&quot; do
+             expect(Month.dump(v)).to(eq(k)) # dump is added by this gem!
+           end
+         end
+       end
+end
+</code></pre>
+
+<h2 id="development">Development</h2>
+
+<p>After checking out the repo, run <code>bin/setup</code> to install dependencies. Then, run <code>rake spec</code> to run the tests. You can also run <code>bin/console</code> for an interactive prompt that will allow you to experiment.</p>
+
+<p>To install this gem onto your local machine, run <code>bundle exec rake install</code>. To release a new version, update the version number in <code>version.rb</code>, and then run <code>bundle exec rake release</code>, which will create a git tag for the version, push git commits and tags, and push the <code>.gem</code> file to <a href="https://rubygems.org">rubygems.org</a>.</p>
+
+<h2 id="authors">Authors</h2>
+
+<p><a href="https://about.me/peter.boling">Peter H. Boling</a> of <a href="http://www.railsbling.com">Rails Bling</a> is the author.</p>
+
+<h2 id="contributors">Contributors</h2>
+
+<p>See the <a href="https://github.com/pboling/month-serializer/network">Network View</a> and the <a href="https://github.com/pboling/month-serializer/blob/master/CHANGELOG.md">CHANGELOG</a></p>
+
+<h2 id="contributing">Contributing</h2>
+
+<ol>
+  <li>Fork it</li>
+  <li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+  <li>Commit your changes (<code>git commit -am 'Added some feature'</code>)</li>
+  <li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+  <li>Make sure to add tests for it. This is important so I don’t break it in a future version unintentionally.</li>
+  <li>Create new Pull Request</li>
+</ol>
+
+<p>Bug reports and pull requests are welcome on GitHub at https://github.com/pboling/anonymous_active_record. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the <a href="http://contributor-covenant.org">Contributor Covenant</a> code of conduct.</p>
+
+<h2 id="code-of-conduct">Code of Conduct</h2>
+
+<p>Everyone interacting in the AnonymousActiveRecord project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the <a href="https://github.com/pboling/anonymous_active_record/blob/master/CODE_OF_CONDUCT.md">code of conduct</a>.</p>
+
+<h2 id="versioning">Versioning</h2>
+
+<p>This library aims to adhere to <a href="http://semver.org/">Semantic Versioning 2.0.0</a>.<br>
+Violations of this scheme should be reported as bugs. Specifically,<br>
+if a minor or patch version is released that breaks backward<br>
+compatibility, a new version should be immediately released that<br>
+restores compatibility. Breaking changes to the public API will<br>
+only be introduced with new major versions.</p>
+
+<p>As a result of this policy, you can (and should) specify a<br>
+dependency on this gem using the <a href="http://guides.rubygems.org/patterns/#pessimistic-version-constraint">Pessimistic Version Constraint</a> with two digits of precision.</p>
+
+<p>For example in a <code>Gemfile</code>:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>month-serializer</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>~&gt; 1.0</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>group:</span> <span class='symbol'>:test</span>
+</code></pre>
+
+<p>or in a <code>gemspec</code></p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_spec'>spec</span><span class='period'>.</span><span class='id identifier rubyid_add_development_dependency'>add_development_dependency</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>month-serializer</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>~&gt; 1.0</span><span class='tstring_end'>&#39;</span></span>
+</code></pre>
+
+<h2 id="legal">Legal</h2>
+
+<ul>
+  <li>
+    <p>MIT License - See <a href="file.LICENSE.html" title="LICENSE">LICENSE</a> file in this project <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a></p>
+  </li>
+  <li>
+    <p>Copyright (c) 2018 <a href="https://about.me/peter.boling">Peter H. Boling</a> of <a href="http://www.railsbling.com">Rails Bling</a></p>
+  </li>
+</ul>
+
+</div></div>
+
+      <div id="footer">
+  Generated on Thu Aug  7 03:26:00 2025 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.37 (ruby-3.4.5).
+</div>
+
+    </div>
+  </body>
+</html>
