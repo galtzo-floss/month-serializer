@@ -4,4 +4,4 @@ source "https://rubygems.org"
 
 gem "month", "~> 2.1"
 
-gemspec :path => "../"
+gemspec path: "../"
