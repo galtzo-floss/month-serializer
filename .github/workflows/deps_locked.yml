@@ -22,6 +22,13 @@ permissions:
 
 env:
   KITCHEN_SINK: true
+  K_SOUP_COV_MIN_BRANCH: 60
+  K_SOUP_COV_MIN_LINE: 77
+  K_SOUP_COV_MIN_HARD: false
+  K_SOUP_COV_FORMATTERS: "html,xml,rcov,lcov,tty"
+  K_SOUP_COV_DO: true
+  K_SOUP_COV_MULTI_FORMATTERS: true
+  K_SOUP_COV_COMMAND_NAME: "Test Coverage"
 
 on:
   push:
