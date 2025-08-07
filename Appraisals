@@ -35,39 +35,39 @@ appraise "current" do
   gem "month", "~> 2.1"
 end
 
-appraise "ruby-2.3" do
+appraise "ruby-2-3" do
   gem "month", "~> 1.4"
 end
 
-appraise "ruby-2.4" do
+appraise "ruby-2-4" do
   gem "month", "~> 1.4"
 end
 
-appraise "ruby-2.5" do
+appraise "ruby-2-5" do
   gem "month", "~> 1.4"
 end
 
-appraise "ruby-2.6" do
+appraise "ruby-2-6" do
   gem "month", "~> 2.1"
 end
 
-appraise "ruby-2.7" do
+appraise "ruby-2-7" do
   gem "month", "~> 2.1"
 end
 
-appraise "ruby-3.0" do
+appraise "ruby-3-0" do
   gem "month", "~> 2.1"
 end
 
-appraise "ruby-3.1" do
+appraise "ruby-3-1" do
   gem "month", "~> 2.1"
 end
 
-appraise "ruby-3.2" do
+appraise "ruby-3-2" do
   gem "month", "~> 2.1"
 end
 
-appraise "ruby-3.3" do
+appraise "ruby-3-3" do
   gem "month", "~> 2.1"
 end
 
