@@ -1,8 +1,33 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
+git_source(:gitlab) { |repo_name| "https://gitlab.com/#{repo_name}" }
 
-gem 'month', github: 'timcraft/month', branch: 'master'
+#### IMPORTANT #######################################################
+# Gemfile is for local development ONLY; Gemfile is NOT loaded in CI #
+####################################################### IMPORTANT ####
 
 # Specify your gem's dependencies in month-serializer.gemspec
 gemspec
+
+platform :mri do
+  # Debugging - Ensure ENV["DEBUG"] == "true" to use debuggers within spec suite
+  # Use binding.break, binding.b, or debugger in code
+  gem "debug", ">= 1.0.0"                  # ruby >= 2.7
+  gem "gem_bench", "~> 2.0", ">= 2.0.5"
+
+  # Dev Console - Binding.pry - Irb replacement
+  gem "pry", "~> 0.14"                     # ruby >= 2.0
+end
+
+# Security Audit
+eval_gemfile "gemfiles/modular/audit.gemfile"
+
+# Code Coverage
+eval_gemfile "gemfiles/modular/coverage.gemfile"
+
+# Linting
+eval_gemfile "gemfiles/modular/style.gemfile"
+
+# Documentation
+eval_gemfile "gemfiles/modular/documentation.gemfile"
