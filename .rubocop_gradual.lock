@@ -2,6 +2,9 @@
   "lib/month/serializer.rb:1935564184": [
     [8, 5, 63, "Style/ClassMethodsDefinitions: Use `class << self` to define a class method.", 2901108034]
   ],
+  "month-serializer.gemspec:2514259740": [
+    [4, 6, 12, "Gemspec/RubyVersionGlobalsUsage: Do not use `RUBY_VERSION` in gemspec file.", 31296028]
+  ],
   "spec/month/serializer_spec.rb:4160227772": [
     [67, 15, 6, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 3211358934],
     [67, 15, 6, "Style/RedundantInterpolation: Prefer `to_s` over string interpolation.", 3211358934],
