@@ -22,12 +22,18 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
   spec.required_ruby_version = ">= 1.9.3"
 
-  spec.add_runtime_dependency("month", ">= 1.4.0")
+  spec.add_runtime_dependency("month", ">= 1.4.0")                      # ruby >= 1.9.3, v2 is ruby >= 2.6
 
+  # Release Tasks
+  spec.add_development_dependency("stone_checksums", "~> 1.0")          # ruby >= 2.2.0
+
+  ### Testing
   spec.add_development_dependency("appraisal2", "~> 3.0")               # ruby >= 1.8.7
-  spec.add_development_dependency("rake", ">= 10.0")
   spec.add_development_dependency("rspec", "~> 3.13")                   # ruby >= 0
   spec.add_development_dependency("rspec-block_is_expected", "~> 1.0")  # ruby >= 1.8.7
   spec.add_development_dependency("rspec_junit_formatter", "~> 0.6")    # Ruby >= 2.3.0, for GitLab Test Result Parsing
-  spec.add_development_dependency("rspec-pending_for", "~> 0")
+  spec.add_development_dependency("rspec-pending_for", "~> 0.1", ">= 0.1.17") # ruby >= 1.8.7
+
+  # Development tasks
+  spec.add_development_dependency("rake", "~> 13.0")                    # ruby >= 2.2
 end
