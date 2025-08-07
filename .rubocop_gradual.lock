@@ -1,13 +1,4 @@
 {
-  "README.md:1427990733": [
-    [59, 5, 27, "Layout/HashAlignment: Align the keys of a hash literal if they span more than one line.", 528284064],
-    [60, 5, 28, "Layout/HashAlignment: Align the keys of a hash literal if they span more than one line.", 270738203],
-    [62, 5, 28, "Layout/HashAlignment: Align the keys of a hash literal if they span more than one line.", 2256693885],
-    [63, 5, 28, "Layout/HashAlignment: Align the keys of a hash literal if they span more than one line.", 2071774781],
-    [65, 5, 28, "Layout/HashAlignment: Align the keys of a hash literal if they span more than one line.", 1701904659],
-    [66, 5, 28, "Layout/HashAlignment: Align the keys of a hash literal if they span more than one line.", 2428992223],
-    [68, 1, 7, "Layout/IndentationWidth: Use 2 (not 7) spaces for indentation.", 394119301]
-  ],
   "lib/month/serializer.rb:1935564184": [
     [8, 5, 63, "Style/ClassMethodsDefinitions: Use `class << self` to define a class method.", 2901108034]
   ],
