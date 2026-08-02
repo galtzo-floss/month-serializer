@@ -1,3 +1,5 @@
+require_relative "serializer/version"
+
 require "month/serializer/version"
 
 # Eternal Gems
