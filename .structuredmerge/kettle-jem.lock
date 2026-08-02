@@ -1097,7 +1097,7 @@ files:
   lib/month/serializer/version.rb:
     recipe: template_source_application_lib_month_serializer_version_rb
     action: write
-    dest_sha256: 47f5a918c7f974b9f927f456e32e1935ce31986f1d40bc87900fc1ca99d7010e
+    dest_sha256: 7f6e2c3bd5239b812d03091f44dfd3c3e18ed90ab1cd721f5ac91cba0680013a
     input_fingerprint: e2e6043cad9dd81b78fae80cb71e344314f394468e26f7999636d849054d6202
     template_sources:
     - lib/gem/version.rb.example

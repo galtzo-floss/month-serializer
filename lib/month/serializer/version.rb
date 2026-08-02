@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Month
+class Month
   module Serializer
     # Version namespace for this gem.
     module Version
