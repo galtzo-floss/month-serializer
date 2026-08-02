@@ -657,14 +657,14 @@ files:
     recipe: template_source_application_Appraisal_root_gemfile
     action: write
     dest_sha256: 8724e3f6faea995be655ac49369bec64a70710112b1f65707fa38f1fd2fd3254
-    input_fingerprint: d84db57e89a423ecaa83b0b0d25ae18151ab4989387724cda39c53c64cb85cff
+    input_fingerprint: e67c23d3ba384489479df953c1cd555df3c18b4829366c929590d162cf3ccf8f
     template_sources:
     - Appraisal.root.gemfile.example
   Appraisals:
     recipe: template_source_application_Appraisals
     action: write
     dest_sha256: f7a9ecc5130b371ac6f38d57d9c4901286ac6458e4e1e39a661245ca65a0dcc5
-    input_fingerprint: ece2a2ec40a1688999388d4c70016a07506d59a895a670ad9f8e9da84474ae59
+    input_fingerprint: '06926a437c3d134de73e711b765475bbd3c4f334b4442592bf5c237e5ee1b820'
     template_sources:
     - Appraisals.example
   CHANGELOG.md:
@@ -705,7 +705,7 @@ files:
   Gemfile:
     recipe: template_source_application_Gemfile
     action: write
-    dest_sha256: d5e8881552f2023cfe2bddd87023936e3a1078493b7350d72fe6fff417caf3bb
+    dest_sha256: e4b00a2b66c667a50516e74fd3e04c274099ba672be9a54093abfa4c1cd1c269
     input_fingerprint: d8aa14c016aaa129797c31440319af54c29bc1923a2f0c2e3664194d6289d071
     template_sources:
     - Gemfile.example
@@ -817,7 +817,7 @@ files:
   gemfiles/modular/coverage_local.gemfile:
     recipe: template_source_application_gemfiles_modular_coverage_local_gemfile
     action: write
-    dest_sha256: b5e1e78455ee62c50ae0c4126ca95909482f2c9378c1e2606ce3231f66f43ced
+    dest_sha256: 0fee7da8e000067343e593d91577a7c9d195497fe91fe157db982a35770ccf98
     input_fingerprint: a607392e397224322c01da67db1d0cbf81d515806f3149e8ac0041e679ef0847
     template_sources:
     - gemfiles/modular/coverage_local.gemfile.example
@@ -838,7 +838,7 @@ files:
   gemfiles/modular/documentation_local.gemfile:
     recipe: template_source_application_gemfiles_modular_documentation_local_gemfile
     action: write
-    dest_sha256: a6772370fff6baf68d10dc5bf2c3dfcd674e32c30415eedca35c4f983e6644d3
+    dest_sha256: 153056aa6455df578e882c59ac181adbc0db50cdd3c04474894455e2d48f810c
     input_fingerprint: b64b93462b54e57d46a1ddddfec197e629408b95e0c8bd44c39619d942a2ca72
     template_sources:
     - gemfiles/modular/documentation_local.gemfile.example
@@ -1006,7 +1006,7 @@ files:
   gemfiles/modular/style_local.gemfile:
     recipe: template_source_application_gemfiles_modular_style_local_gemfile
     action: write
-    dest_sha256: c9a3c26b28ee06f00ade75f083655e696b0ef07cc923db95cef9c0f5fdac4e02
+    dest_sha256: 4e1659934bb8d1a1a0e3ebc749b8fb65fbaf7110de13081cb7e9c7cab30da84f
     input_fingerprint: 6e5f8cc8d08f60412bf4a021fe512fde688bd625ee29f8ebebda5c6c5c3bf3d0
     template_sources:
     - gemfiles/modular/style_local.gemfile.example
@@ -1020,7 +1020,7 @@ files:
   gemfiles/modular/templating_local.gemfile:
     recipe: template_source_application_gemfiles_modular_templating_local_gemfile
     action: write
-    dest_sha256: 0c52bc2766cfdfae3ffe6133bb11772195a503c09fe7e1797115acb70a11561a
+    dest_sha256: baa85fb058d99615bb029843dda53707c39e5c54a78c1e62ded155c6bc7e8ffc
     input_fingerprint: c4dbbac6263102e971602dd3c9b59f6ecd286ec1de0e80c311b5f11951c29340
     template_sources:
     - gemfiles/modular/templating_local.gemfile.example
@@ -1111,7 +1111,7 @@ files:
   month-serializer.gemspec:
     recipe: template_source_application_month_serializer_gemspec
     action: write
-    dest_sha256: 82277d5d6b65dbe292183371ceb24dc4b8ef2bee43606fa49af634afd4d16cb1
+    dest_sha256: 261a503f23b5cd0bda877416203d4c04aa9e34272a3631c39313f57fdc3c6f05
     input_fingerprint: 38a555e7557281d8a0b918bd3dd9f5722882fe9ff75280f06c3a0aa1a6537870
     template_sources:
     - gem.gemspec.example
@@ -1140,6 +1140,6 @@ files:
     recipe: template_source_application_spec_spec_helper_rb
     action: write
     dest_sha256: 5add78c8aa2979007543fd209b775b93ced71cbf0d536f4a24495d665cc2e433
-    input_fingerprint: 62c7533ae53f194148c7adc382fe09b5e68a0860fbf905db9b14e7d5402a7945
+    input_fingerprint: 3cf539af4484d8a20c13671dce58cb0370140af87996aee7be941b12033c812b
     template_sources:
     - spec/spec_helper.rb.example
