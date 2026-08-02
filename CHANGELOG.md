@@ -20,6 +20,25 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [1.0.2] - 2026-08-02
+
+- TAG: [v1.0.2][1.0.2t]
+- COVERAGE: 90.00% -- 36/40 lines in 2 files
+- BRANCH COVERAGE: 60.00% -- 6/10 branches in 2 files
+- 36.36% documented
+
+### Added
+
 - kettle-jem-template-20260720-005 - README Support & Community links now
   include RubyForum.
 - kettle-jem-template-20260726-001 - Projects now include YARD lint
@@ -42,10 +61,6 @@ Please file a bug if you notice a violation of semantic versioning.
   installing the main Gemfile bundle.
 - kettle-jem-template-20260801-001 - Generated README gem dashboard links now
   use ClickGems instead of BestGems.
-
-### Deprecated
-
-### Removed
 
 ### Fixed
 
@@ -92,6 +107,8 @@ Please file a bug if you notice a violation of semantic versioning.
 - kettle-jem-template-20260802-001 - Devcontainer JSON files now merge as JSONC,
   preserving comments and trailing commas during template updates.
 
-### Security
+- Restore the source version sequence after RubyGems 1.0.1 was published without a matching source version or tag.
 
-[Unreleased]: https://gitlab.com/galtzo-floss/month-serializer/-/compare/HEAD
+[Unreleased]: https://github.com/galtzo-floss/month-serializer/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/galtzo-floss/month-serializer/compare/b695d99e3ec49fedb1f3a50b3863956b58e7827b...v1.0.2
+[1.0.2t]: https://github.com/galtzo-floss/month-serializer/releases/tag/v1.0.2
