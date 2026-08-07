@@ -1,5 +1,3 @@
-require "bundler/setup"
-
 # External Gems
 require "rspec/pending_for"
 require "rspec/block_is_expected"

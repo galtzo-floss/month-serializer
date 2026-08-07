@@ -37,6 +37,7 @@ jobs:
             gemfile: "Appraisal.root"
             rubygems: "3.3.27"
             bundler: "2.3.27"
+            experimental: true
 
           # Ruby 2.4
           - ruby: "ruby-2.4"
