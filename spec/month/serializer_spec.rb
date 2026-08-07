@@ -62,7 +62,7 @@ RSpec.describe Month::Serializer do
       24226 => Month.new(2018, 10),
       24227 => Month.new(2018, 11),
       24228 => Month.new(2018, 12),
-      24760 => Month.new(2063, 4),      # Star Trek: First Contact (1996)
+      24760 => Month.new(2063, 4)      # Star Trek: First Contact (1996)
     }.each do |k, v|
       context "#{v}" do
         it "is #{k}" do
@@ -145,7 +145,7 @@ RSpec.describe Month::Serializer do
       24226 => Date.new(2018, 10, 1),
       24227 => Date.new(2018, 11, 1),
       24228 => Date.new(2018, 12, 1),
-      24760 => Date.new(2063, 4, 1),      # Star Trek: First Contact (1996)
+      24760 => Date.new(2063, 4, 1)      # Star Trek: First Contact (1996)
     }.each do |k, v|
       context "#{k} => #{v}" do
         it "converts" do

@@ -1,7 +1,6 @@
-require "month/serializer/version"
-
 # Eternal Gems
 require "month"
+require_relative "serializer/version"
 
 class Month
   module Serializer

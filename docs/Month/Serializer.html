@@ -10,9 +10,9 @@
   
 </title>
 
-  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="../css/common.css" type="text/css" />
+  <link rel="stylesheet" href="../css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "Month::Serializer";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="../class_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -78,8 +80,9 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/month/serializer.rb<span class="defines">,<br />
+    <dd>lib/month/serializer.rb<span class="defines">,<br>
   lib/month/serializer/version.rb</span>
+
 </dd>
   </dl>
   
@@ -89,7 +92,7 @@
 <p class="children">
   
     
-      <strong class="modules">Modules:</strong> <span class='object_link'><a href="Serializer/ClassMethods.html" title="Month::Serializer::ClassMethods (module)">ClassMethods</a></span>
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="Serializer/ClassMethods.html" title="Month::Serializer::ClassMethods (module)">ClassMethods</a></span>, <span class='object_link'><a href="Serializer/Version.html" title="Month::Serializer::Version (module)">Version</a></span>
     
   
     
@@ -105,9 +108,19 @@
     <dl class="constants">
       
         <dt id="VERSION-constant" class="">VERSION =
-          
+          <div class="docstring">
+  <div class="discussion">
+    <p>Current gem version exposed at the traditional constant location.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
         </dt>
-        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>1.0.0</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+        <dd><pre class="code"><span class='const'><span class='object_link'><a href="Serializer/Version.html" title="Month::Serializer::Version (module)">Version</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Serializer/Version.html#VERSION-constant" title="Month::Serializer::Version::VERSION (constant)">VERSION</a></span></span></pre></dd>
       
     </dl>
   
@@ -150,6 +163,7 @@
 
       
     </ul>
+    
   
 
 
@@ -173,12 +187,12 @@
       <pre class="lines">
 
 
+7
 8
-9
-10</pre>
+9</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/month/serializer.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'lib/month/serializer.rb', line 7</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_included'>included</span><span class='lparen'>(</span><span class='id identifier rubyid_base'>base</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_base'>base</span><span class='period'>.</span><span class='id identifier rubyid_extend'>extend</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="Serializer/ClassMethods.html" title="Month::Serializer::ClassMethods (module)">ClassMethods</a></span></span><span class='rparen'>)</span>

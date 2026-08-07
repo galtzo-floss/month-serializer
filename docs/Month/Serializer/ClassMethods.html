@@ -10,9 +10,9 @@
   
 </title>
 
-  <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="../../css/common.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "Month::Serializer::ClassMethods";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="../../class_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -78,7 +80,8 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/month/serializer.rb</dd>
+    <dd>lib/month/serializer.rb
+</dd>
   </dl>
   
 </div>
@@ -145,6 +148,7 @@
 
       
     </ul>
+    
   
 
 
@@ -168,13 +172,13 @@
       <pre class="lines">
 
 
+64
 65
 66
-67
-68</pre>
+67</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/month/serializer.rb', line 65</span>
+      <pre class="code"><span class="info file"># File 'lib/month/serializer.rb', line 64</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_dump'>dump</span><span class='lparen'>(</span><span class='id identifier rubyid_month'>month</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_raise_dump_error'>raise_dump_error</span><span class='lparen'>(</span><span class='id identifier rubyid_month'>month</span><span class='rparen'>)</span> <span class='kw'>unless</span> <span class='id identifier rubyid_month'>month</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='kw'>self</span><span class='rparen'>)</span>
@@ -200,6 +204,7 @@
       <pre class="lines">
 
 
+12
 13
 14
 15
@@ -249,11 +254,10 @@
 59
 60
 61
-62
-63</pre>
+62</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/month/serializer.rb', line 13</span>
+      <pre class="code"><span class="info file"># File 'lib/month/serializer.rb', line 12</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_load'>load</span><span class='lparen'>(</span><span class='id identifier rubyid_month_as_integer'>month_as_integer</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_raise_load_error'>raise_load_error</span><span class='lparen'>(</span><span class='id identifier rubyid_month_as_integer'>month_as_integer</span><span class='rparen'>)</span> <span class='kw'>unless</span> <span class='id identifier rubyid_month_as_integer'>month_as_integer</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Integer</span><span class='rparen'>)</span>

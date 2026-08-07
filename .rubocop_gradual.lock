@@ -1,59 +1,31 @@
 {
-  "lib/month/serializer.rb:1935564184": [
-    [8, 5, 63, "Style/ClassMethodsDefinitions: Use `class << self` to define a class method.", 2901108034]
+  "Rakefile:469621883": [
+    [251, 3, 16, "Rake/DuplicateTask: Task `test` is defined at both Rakefile:244 and Rakefile:251.", 850263259],
+    [254, 3, 16, "Rake/DuplicateTask: Task `spec` is defined at both Rakefile:230 and Rakefile:254.", 2494909563]
   ],
-  "month-serializer.gemspec:2514259740": [
-    [4, 6, 12, "Gemspec/RubyVersionGlobalsUsage: Do not use `RUBY_VERSION` in gemspec file.", 31296028]
+  "gemfiles/modular/templating.gemfile:3018447732": [
+    [14, 3, 47, "Bundler/DuplicatedGem: Gem `tree_sitter_language_pack` requirements already given on line 10 of the Gemfile.", 3843603197]
   ],
-  "spec/month/serializer_spec.rb:4160227772": [
+  "spec/month/serializer_spec.rb:2667267420": [
     [67, 15, 6, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 3211358934],
     [67, 15, 6, "Style/RedundantInterpolation: Prefer `to_s` over string interpolation.", 3211358934],
-    [80, 9, 20, "RSpec/NestedGroups: Maximum example group nesting exceeded [4/3].", 2208962855],
     [80, 17, 12, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 2592426744],
     [150, 15, 14, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 1200079675],
     [161, 13, 16, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 441812882],
-    [168, 16, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
-    [172, 16, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
     [176, 13, 15, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 2368380600],
-    [181, 16, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
-    [185, 16, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
     [189, 13, 16, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 1816077224],
-    [194, 16, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
-    [198, 16, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
     [202, 13, 16, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 441813437],
-    [207, 16, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
-    [211, 16, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
     [217, 13, 16, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 441812882],
-    [223, 16, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
-    [226, 7, 21, "RSpec/NestedGroups: Maximum example group nesting exceeded [4/3].", 3040649512],
     [226, 15, 13, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 234149463],
-    [230, 18, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
-    [234, 7, 20, "RSpec/NestedGroups: Maximum example group nesting exceeded [4/3].", 544321211],
     [234, 15, 12, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 2157925604],
-    [238, 18, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
     [243, 13, 15, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 2368380600],
-    [249, 16, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
-    [252, 7, 21, "RSpec/NestedGroups: Maximum example group nesting exceeded [4/3].", 3040649512],
     [252, 15, 13, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 234149463],
-    [256, 18, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
-    [260, 7, 20, "RSpec/NestedGroups: Maximum example group nesting exceeded [4/3].", 544321211],
     [260, 15, 12, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 2157925604],
-    [264, 18, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
     [269, 13, 16, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 1816077224],
-    [275, 16, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
-    [278, 7, 21, "RSpec/NestedGroups: Maximum example group nesting exceeded [4/3].", 3040649512],
     [278, 15, 13, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 234149463],
-    [282, 18, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
-    [286, 7, 20, "RSpec/NestedGroups: Maximum example group nesting exceeded [4/3].", 544321211],
     [286, 15, 12, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 2157925604],
-    [290, 18, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
     [295, 13, 16, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 441813437],
-    [301, 16, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
-    [304, 7, 21, "RSpec/NestedGroups: Maximum example group nesting exceeded [4/3].", 3040649512],
     [304, 15, 13, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 234149463],
-    [308, 18, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441],
-    [312, 7, 20, "RSpec/NestedGroups: Maximum example group nesting exceeded [4/3].", 544321211],
-    [312, 15, 12, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 2157925604],
-    [316, 18, 7, "RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.", 1892732441]
+    [312, 15, 12, "RSpec/ContextWording: Context description should match /^when\\b/, /^with\\b/, or /^without\\b/.", 2157925604]
   ]
 }
