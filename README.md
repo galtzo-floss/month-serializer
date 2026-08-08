@@ -138,6 +138,10 @@ gem install month-serializer
 
 ## ⚙️ Configuration
 
+There is no serializer configuration object. Load the extension after `month`
+and include `Month::Serializer` in `Month`; this adds the integer conversion
+methods without requiring Rails or an application initializer.
+
 ## 🔧 Basic Usage
 
 Add this to the bootstrapping process of your app, somewhere after the [`month` gem][month-gem] is loaded.
