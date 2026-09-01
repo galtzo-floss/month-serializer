@@ -6,3 +6,12 @@ module Month
     VERSION: String
   end
 end
+
+class Month
+  module Serializer
+    module Version
+      VERSION: String
+    end
+    VERSION: String
+  end
+end
