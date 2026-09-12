@@ -39,7 +39,7 @@
   "lib/month/serializer.rb:2782595334": [
     [96, 13, 1, "Lint/LtsRuby/UnavailableMethod: Enumerator#+ is unavailable before Ruby 2.6.", 177550]
   ],
-  "month-serializer.gemspec:1705700045": [
+  "month-serializer.gemspec:322526446": [
     [25, 8, 4, "Lint/LtsRuby/UnavailableMethod: Thread#name= is unavailable before Ruby 2.3.", 2087876002],
     [47, 24, 9, "Lint/LtsRuby/UnavailableMethod: Symbol#end_with? is unavailable before Ruby 2.7.", 308216808],
     [53, 16, 16, "Lint/LtsRuby/UnavailableMethod: Matrix/Vector#[]= is unavailable before Ruby 2.6.", 3147164910],

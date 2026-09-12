@@ -197,7 +197,7 @@ Compatible with Ruby v1.9.3+ and JRuby v9.1+, and tested on all minor versions o
 
 <h3 id="compatibility">Compatibility</h3>
 
-<p>Compatible with MRI Ruby 1.9.3+, and concordant releases of JRuby, and TruffleRuby.<br>
+<p>Compatible with MRI Ruby 1.9.3+, JRuby, and TruffleRuby.<br>
 CI workflows and Appraisals are generated for MRI Ruby 2.4+.<br>
 This test floor is configured by <code>ruby.test_minimum</code> in <code>.kettle-jem.yml</code> and<br>
 may be higher than the gem’s runtime compatibility floor when legacy Rubies are<br>
@@ -322,8 +322,9 @@ not practical for the current toolchain.</p>
 
 </details>
 
-<h3 id="enterprise-support-">Enterprise Support <a href="https://tidelift.com/subscription/pkg/rubygems-month-serializer?utm_source=rubygems-month-serializer&amp;utm_medium=referral&amp;utm_campaign=readme"><img src="https://tidelift.com/badges/package/rubygems/month-serializer" alt="Tidelift"></a>
-</h3>
+<h3 id="enterprise-support">Enterprise Support</h3>
+
+<p><a href="https://tidelift.com/subscription/pkg/rubygems-month-serializer?utm_source=rubygems-month-serializer&amp;utm_medium=referral&amp;utm_campaign=readme"><img src="https://tidelift.com/badges/package/rubygems/month-serializer" alt="Tidelift"></a></p>
 
 <p>Available as part of the Tidelift Subscription.</p>
 
@@ -365,6 +366,10 @@ not practical for the current toolchain.</p>
 </code></pre>
 
 <h2 id="️-configuration">⚙️ Configuration</h2>
+
+<p>There is no serializer configuration object. Load the extension after <code>month</code><br>
+and include <code>Month::Serializer</code> in <code>Month</code>; this adds the integer conversion<br>
+methods without requiring Rails or an application initializer.</p>
 
 <h2 id="-basic-usage">🔧 Basic Usage</h2>
 
@@ -476,8 +481,7 @@ and <a href="https://tidelift.com/subscription/pkg/rubygems-month-serializer?utm
 <h2 id="-contributing">🤝 Contributing</h2>
 
 <p>If you need some ideas of where to help, you could work on adding more code coverage,<br>
-or if it is already 💯 (see <a href="#code-coverage">below</a>) check <a href="https://github.com/galtzo-floss/month-serializer/issues">issues</a> or <a href="https://github.com/galtzo-floss/month-serializer/pulls">PRs</a>,<br>
-or use the gem and think about how it could be better.</p>
+check <a href="https://github.com/galtzo-floss/month-serializer/issues">issues</a> or <a href="https://github.com/galtzo-floss/month-serializer/pulls">PRs</a>, or use the gem and think about how it could be better.</p>
 
 <p>We <a href="https://keepachangelog.com/en/1.0.0/"><img src="https://img.shields.io/badge/keep--a--changelog-1.0.0-34495e.svg?style=flat" alt="Keep A Changelog"></a> so if you make changes, remember to update it.</p>
 
@@ -512,19 +516,6 @@ chat rooms and mailing lists agrees to follow the <a href="https://github.com/ga
 <p>Made with <a href="https://contrib.rocks">contributors-img</a>.</p>
 
 <p>Also see GitLab Contributors: <a href="https://gitlab.com/galtzo-floss/month-serializer/-/graphs/main">https://gitlab.com/galtzo-floss/month-serializer/-/graphs/main</a></p>
-
-<details>
-  <summary>⭐️ Star History</summary>
-
-  <p><a href="https://star-history.com/galtzo-floss/month-serializer&amp;Date"></a></p>
-  <picture>
- <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=galtzo-floss/month-serializer&amp;type=Date&amp;theme=dark"></source>
- <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=galtzo-floss/month-serializer&amp;type=Date"></source>
- <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=galtzo-floss/month-serializer&amp;type=Date">
- </picture>
-  <p>&lt;/a&gt;</p>
-
-</details>
 
 <h2 id="-versioning">📌 Versioning</h2>
 
@@ -567,7 +558,7 @@ the <a href="https://github.com/galtzo-floss/month-serializer/blob/main/MIT.md">
 
   <ul>
     <li>Copyright (c) 2018, 2025-2026 Peter H. Boling</li>
-    <li>Copyright (c) 2025 Aboling0</li>
+    <li>Copyright (c) 2025 Annibelle Boling</li>
   </ul>
 
 </details>
