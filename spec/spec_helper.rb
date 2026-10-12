@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # External Gems
 require "rspec/pending_for"
 require "rspec/block_is_expected"
