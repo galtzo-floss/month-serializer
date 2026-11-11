@@ -122,9 +122,6 @@ Please file a bug if you notice a violation of semantic versioning.
 - kettle-jem-template-20260728-005 - VersionGem bootstrap now creates the
   missing canonical version spec when a project only has shim namespace version
   specs.
-- kettle-jem-template-20260729-001 - Generated JRuby 9.4 workflows now use the
-  legacy manual bundle install path, avoiding setup-time Bundler full-index
-  failures against `gem.coop`.
 - kettle-jem-template-20260729-003 - Old-Ruby gems below the VersionGem runtime
   floor now get managed minimal `version.rb` files and anonymous-loader version
   specs without adding `version_gem`.
