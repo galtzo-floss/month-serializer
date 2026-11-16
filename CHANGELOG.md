@@ -22,6 +22,23 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [1.0.4] - 2026-11-15
+
+- TAG: [v1.0.4][1.0.4t]
+- COVERAGE: 90.00% -- 36/40 lines in 2 files
+- BRANCH COVERAGE: 60.00% -- 6/10 branches in 2 files
+- 36.36% documented
+
+### Changed
+
 - [kc] kettle-jem/prepare: updated 25 project files:
   - configuration (2)
   - dependencies (23)
@@ -32,14 +49,6 @@ Please file a bug if you notice a violation of semantic versioning.
   - documentation (2)
   - other (4)
   - workflows (30)
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
 
 ## [1.0.3] - 2026-10-01
 
@@ -143,7 +152,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Restore the source version sequence after RubyGems 1.0.1 was published without a matching source version or tag.
 
-[Unreleased]: https://github.com/galtzo-floss/month-serializer/compare/v1.0.3...HEAD
+[Unreleased]: https://github.com/galtzo-floss/month-serializer/compare/v1.0.4...HEAD
+[1.0.4]: https://github.com/galtzo-floss/month-serializer/compare/v1.0.3...v1.0.4
+[1.0.4t]: https://github.com/galtzo-floss/month-serializer/releases/tag/v1.0.4
 [1.0.3]: https://github.com/galtzo-floss/month-serializer/compare/v1.0.2...v1.0.3
 [1.0.3t]: https://github.com/galtzo-floss/month-serializer/releases/tag/v1.0.3
 [1.0.2]: https://github.com/galtzo-floss/month-serializer/compare/b695d99e3ec49fedb1f3a50b3863956b58e7827b...v1.0.2
